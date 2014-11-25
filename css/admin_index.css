@@ -1,0 +1,83 @@
+html {height:100%;}
+body {margin:0;font:12px/15px "Lucida Sans Unicode", "Lucida Grande", sans-serif;color:#8a8a8a;min-width:1000px;background:#fff;height:100%;}
+#wrapper {position:relative;width:1000px;min-width:1000px;min-height:100%;margin:0 auto;overflow:hidden;background:url(../images/admin/bg-wrapper.png) repeat-y;background-color: #f7f7f7;}
+#content{width: 100%;float: left;}
+#sidebar {float:left;margin:0 0 0 -100%;width:166px;padding:18px 1px 0;}
+.cright{margin: 0 0 0 168px;}
+.controls {height:70px;background-color:#90c5a9; }
+.banner{font-size: 28px;color: #6B1686;font-weight: 1200;line-height: 70px;float: left;margin-left: 30px;font-family: "黑体"}
+
+/*主题内容*/
+.cbody {/*border:3px solid #fa8b60;*/min-height:100%;}
+.cbody_title{background-color: #F9F9F9;}
+.cbody_title ul{height: 40px;margin: 0;padding: 0;list-style-type: none;font-family: 'Microsoft Yahei';}
+.cbody_title li{height:40px;line-height:40px;float: left;margin:0 5px;}
+.cbody_title a{height:30px;line-height:30px;text-decoration: none;display: block;float: right;padding: 0 5px;margin: 3px;}
+.cbody_title input{height: 22px;width: 200px;margin-right:3px; }
+.cbody_title a span{width: 25px;height: 25px;display: block;float: left;margin-top: 3px;margin-right:2px; }
+.cbody_title a:hover{background-color: #F0F0F0;border: 1px solid #E5E3E3;}
+.add_icon{background:url(../images/admin/admin_icon.png) -14px -55px;}
+.delete_icon{background:url(../images/admin/admin_icon.png) -46px -55px;}
+.update_icon{background:url(../images/admin/admin_icon.png) -109px -55px;}
+.search_icon{background:url(../images/admin/admin_icon.png) -236px -124px;}
+.see_icon{background:url(../images/admin/admin_icon.png) -14px -21px;}
+.cbody_content{font-family: 'Microsoft Yahei';font-size: 14px;}
+.cbody_content table{margin: 10px 10px 10px 25px;border: 1px solid #DBDBDB;border-collapse: collapse;}
+/*.cbody_content table tr td:nth-child(3){width: 280px;overflow: hidden;}*/
+/*.cbody_content table tr{background-color: expression(this.sectionRowIndex == 0 ? "#FFCCCC" : ((this.sectionRowIndex % 2 == 0) ? "#FFF0F0" : "#F0F0FF"));}*/
+.cbody_content td,th{padding: 7px 20px;text-align: center;border: 1px solid #DBDBDB;}
+.cbody_content td span{width: 25px;height: 25px;display: block;float: left;}
+.cbody_content td a{width: 25px;height: 25px;display: block;float: left;margin-right:8px;}
+.cbody_content td a:hover{top:1px;left: 1px;position: relative;}
+.title_width{width: 280px;}
+
+.cbody .error {background:#ffdede url(../images/admin/sprite.png) no-repeat 17px -712px;color:#be0000;}
+.cbody .warning {color:#dc6200;background:#fff6de url(../images/admin/sprite.png) no-repeat 18px -975px;}
+.cbody .succes {color:#3f5a04;background:#dfedc0 url(../images/admin/sprite.png) no-repeat 15px -841px;}
+
+/*侧边栏*/
+#sidebar .shadow {background:url(../images/admin/bg-shadow.png) no-repeat;width:5px;height:9999px;overflow:hidden;text-indent:-9999px;position:absolute;left:72px;top:0;}
+.logo {background:url(../images/sitename.png);width:86px;height:80px;overflow:hidden;text-indent:-9999px;display:block;margin:0 auto 23px;position:relative;left:1px;}
+.logo a {display:block;height:100%;}
+.buttons {list-style:none;margin:0;padding:0;position:relative;z-index:2;font:bold 11px/13px Arial, Helvetica, sans-serif;}
+.buttons li {vertical-align:top;margin:0 0 1px;position:relative;}
+.buttons .btn {vertical-align:center;background: #616a78;background: url(../images/admin/side_bg.png);width:166px;height:40px;display:block;overflow:hidden;cursor:pointer;line-height: 40px;font-size: 15px;font-weight: 800;color: black;text-decoration: none;}
+.buttons li.active .btn {background:url(../images/admin/side_active.png) no-repeat;margin:0 -21px 0 0;padding:0 21px 0 0;color: white;}
+.buttons .btn span {overflow:hidden;display:block;text-indent:9999px;width:20px;height:20px;margin:11px 20px 11px 30px;background:url(../images/admin/sprite.png) no-repeat 9999px 0;float: left;}
+.buttons .ico1 span {width:19px;height:18px;background-position:0 0;}
+.buttons .active .ico1 span {background-position:0 -23px;}
+.buttons .ico2 span {height:19px;background-position:-1px -47px;}
+.buttons .active .ico2 span {background-position:-2px -73px;}
+.buttons .ico3 span {background-position:-2px -97px;}
+.buttons .active .ico3 span {background-position:-2px -126px;}
+.buttons .ico4 span {background-position:-2px -153px;}
+.buttons .active .ico4 span {background-position:-2px -178px;}
+.buttons .ico5 span {background-position:-1px -206px;}
+.buttons .active .ico5 span {background-position:-2px -232px;}
+.buttons .ico6 span {background-position:-2px -262px;}
+.buttons .active .ico6 span {background-position:-3px -291px;}
+.buttons .ico7 span {background-position:-4px -321px;}
+.buttons .active .ico7 span {background-position:-4px -352px;}
+.buttons .ico8 span {background-position:-4px -380px;}
+.buttons .active .ico8 span {background-position:-4px -415px;}
+.buttons .tooltip {position:absolute;left:152px;top:9px;color:#3b414d;padding:0 6px 0 0;background:url(../images/admin/sprite.png) no-repeat 100% -95px;height:24px;display:none;white-space:nowrap;}
+.buttons .tooltip span {height:20px;float:left;padding:4px 3px 0 10px;background:url(../images/admin/sprite.png) no-repeat -39px -125px;}
+.buttons ul{display: none;}
+
+.tab{padding: 0 0px 1px 30px;font-size: 14px;color: black;list-style-type: none;}
+.tab li{height: 28px;line-height: 28px;margin: 1px;}
+.tab li a{height: 28px;line-height: 28px;display: block;background-color: #A589B9;color:white;text-align: center;text-decoration: none;}
+.tab li a:hover{background-color: #D6AFDE;}
+.buttons li .active{display: block;}
+.buttons li .liactive{background-color: #D6AFDE;}
+
+#pager{margin-top:0px;height:34px;border: 1px solid #EEEEEE;float: right;background-color: #F5F5F5;}
+#pager .all_page{height:34px;line-height:34px;padding:0 12px;float:left;border: 1px solid #EEEEEE;color: black;}
+#pager .to_page{height:34px;line-height:34px;float:right;}
+#pager .to_page input{width:51px;height:33px;line-height:34px;border: 1px solid #EEEEEE;}
+#pager .to_page a{float: right;}
+#pager ul{float: left;list-style-type: none;margin: 0;padding: 0px;}
+#pager ul li{float: left;border: 1px solid #EEEEEE;}
+#pager a{height: 34px;line-height:34px;padding:0 12px;display: block;color: black;text-decoration: none;}
+#pager a:hover{background-color: white;color: #9768AC;}
+#pager ul li .active{background-color: white;color: #9768AC;}

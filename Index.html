@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+	<title>中国光大银行湛江分行网站首页</title>
+	<meta charset="utf-8" />
+	<meta name="author" />
+	<meta name="keyword" />
+	<meta name="description" />
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style type="text/css">
+		/*轮转图样式*/
+		#pic_msg{width:450px;border-left:1px solid #DBDBDB;border-bottom:1px solid #DBDBDB;border-top:1px solid #DBDBDB;text-align:center;position:relative;float: left;z-index: -1;}
+		.turn_img{position:relative;width:450px;overflow:hidden;}
+		.turn_img ul{width:1800px;}
+		.img_title{position:absolute;width:450px;height:35px;line-height:35px;bottom:0px;left:0;z-index:4;color:white;}
+		.turn_img ul li{height:312px;width:450px;position:relative;float:left;}
+		.turn_img_bg{filter:alpha(opacity=80);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;background:black;position:absolute;bottom:0;left:0;width:450px;height:35px;z-index:2;}
+		.turn_img img{height:312px;}
+		.turn_img ol{position:absolute;right:5px;bottom:35px;}
+		.turn_img ol li{filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity: 0.8;opacity: 0.8;height:20px;width:20px;float:left;background:#abcdef;margin-left:5px;}
+		.turn_img ol li{cursor: pointer;}
+		.turn_img ol .curr{background:#FF7E00;}
+
+		/*列表样式*/
+		#mul_msg{width:262px;height: 312px;float: left;margin-right: 10px;}
+		.list_header{height:32px;line-height:28px;color: #ffffff;font-size: 14px;font-family: 'Microsoft Yahei';text-align: center;line-height: 28px;background-image: url(images/bg_title.png);}
+		.msg_list{border-left:5px solid #EEEEEE;border-bottom:3px solid #EEEEEE;border-right:3px solid #EEEEEE;}
+		.msg_list li {margin-top:2px;padding-left: 12px;line-height:28px;color: #605858;height: 28px;display: block;overflow: hidden;background: #f7f7f7;border-bottom:1px solid #EEEEEE;}
+		.msg_list li:hover{background-color: white;color: #9768AC;}
+		.msg_list a{width:170px; color: #333;display: block;float: left;overflow: hidden;}
+		.msg_list a:hover{color: #9768AC;}
+		.msg_list span{float: right;width: 64px;}
+		.msg_list_first{padding: 8px 8px 7px 12px;border-left:5px solid #EEEEEE;border-bottom:2px solid #EEEEEE;border-right:3px solid #EEEEEE;}
+		.msg_list_first span{float: right;}
+		.msg_list_first p{padding-top:8px;color:#818181;font-size:13px;text-indent: 2em;}
+
+		#important_msg{width:262px;height: 312px;float: right;margin-left: 10px;}
+
+		/*条线样式*/
+		#stripline_msg{margin-top: 15px;}
+		.turn_msg{float: left;width:380px;height: 297px;margin-right: 10px;}
+		.turn_msg_title{cursor:pointer;}
+		.turn_msg_title li{width:94px;height:38px;float:left;display: inline-block;text-align:center;line-height: 42px;font-size: 14px;font-family: 'Microsoft Yahei';background:url(images/turn_bg_black.png);}
+		.turn_msg_title a{color: white;}
+		.turn_msg_title a:hover{text-decoration:underline ;}
+		.turn_msg .curr_title{background:white;background: url(images/turn_bg.png);}
+		.turn_news_block{display:none;width: 376px;}
+		.turn_msg .curr_content{display:block;}
+		.turn_msg .msg_list a{width: 280px;}
+
+		/*产品信息样式*/
+		#product_msg{width:220px;height: 297px;float: left;margin-top: 15px;}
+		#product_msg img{width: 210px;height: 118px;}
+		#product_msg table{border-left:5px solid #EEEEEE;border-bottom:5px solid #EEEEEE;border-right:3px solid #EEEEEE;}
+
+		/*部门信息样式*/
+		#deparment{float: right;width: 380px;margin-top: 15px;margin-right: 0px;}
+		#deparment .turn_news_block{width:280px;float: right;}
+		.turn_msg_title_vertical{width:94px;height:297px;cursor:pointer;float: right;}
+		.turn_msg_title_vertical li{width:94px;height:36px;display: inline-block;text-align:center;line-height: 36px;font-size: 14px;font-family: 'Microsoft Yahei';background-image: url(images/turn_bg_black.png);color: white;}
+		.turn_msg_title_vertical a{color: white;}
+		.turn_msg_title_vertical a:hover{text-decoration:underline ;}
+		#deparment .curr_title{background:white;background-image: url(images/turn_bg_v.png);}
+		#deparment .msg_list{border-top: 5px solid #EEEEEE;border-right:none;}
+		#deparment .msg_list a{width: 180px;}
+
+		#jumu{}
+
+
+
+	</style>
+	<script type="text/javascript">
+		// $("input[placeholder]")
+	</script>
+</head>
+<body><!-- 
+	<input type="text" style="width:200px;height:22px;border: 1px solid #dadada;border-right: none;"><input type="submit" value="" style="background:url(images/search_bg.png);width:30px;height:30px;border: 1px solid #dadada;border-left: none;"> -->
+	<div id="header">
+		<div id="banner"></div>
+		<div id="nav">
+			<ul class="nav_bar">
+				<li ><a class="active">首页</a></li>
+				<li ><a href="list.html">行内通知 </span></a>
+					<ul class="li_bar">
+						<li ><a href="list.html">综合信息</a></li>
+			        	<li ><a href="import_msg.html">重要通知</a></li>
+					</ul>
+				</li>
+				<li><a href="#">分行信息 </span></a>
+					<ul class="li_bar">
+						<li ><a href="#">分行简报</a></li>
+			        	<li ><a href="#">分行发文</a></li>
+					</ul>
+				</li>
+		        <li><a href="#">下载专区 </span></a>
+		            <ul class="li_bar">
+		              <li><a href="#">资料下载</a></li>
+		              <li><a href="#">软件下载</a></li>
+		            </ul>
+		        </li>
+		        <li ><a href="#">通讯录</a></li>
+		        <li ><a href="#">文化风采</a></li>
+		        <li ><a href="#">公共文件夹</a></li>
+			</ul>
+		</div>
+		<div id="search_bar">
+			<form id="search_form">
+				<input type="text" name="" class="keyword" value="全文检索" /><input type="submit" value=" " />
+			</form>
+		</div>
+	</div>
+	<div class="jumu">
+		<div class="jumu_left">核心价值观：<br>诚信为本、创新为先、团队合作、卓越执行、和谐发展</div>
+		<div class="jumu_right">幸福生活，快乐工作</div>
+	</div>
+	<div id="content">
+		<div class="row">
+			<div id="mul_msg">
+				<div class="list_header">综合信息</div>
+				<div class='msg_list_first'>
+					<h3><a href='#'>中国海洋学会2007年</a><span>[14-10-11]</span></h3>
+					<p>中国海洋学会成立于1979年，是全国海洋科技工作者和涉海单位自愿组织的学术性、公益性法人社会团体，是发展我国海洋科学技术事业的重要社会力量。</p>
+				</div>
+				<ul class="msg_list">
+					<li><a href="detail_msg.html">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海鲜进口</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海鲜进口</a><span>[14-10-11]</span></li>
+				</ul>
+			</div>
+			<div id="pic_msg">
+				<div class='turn_img'>
+					<ul>
+						<a href='#'><li><img src='images/04.jpg' /><span class='img_title'>中国海洋学会2007年</span><div class='turn_img_bg'></div></li></a>
+						<a href='#'><li><img src='images/02.jpg' /><span class='img_title'>青岛未出口鱼片上黑名单企业向美方申诉成功</span><div class='turn_img_bg'></div></li></a>
+						<a href='#'><li><img src='images/03.jpg' /><span class='img_title'>我国将坚持“以养为主”打造现代水产养殖业</span><div class='turn_img_bg'></div></li></a>
+						<a href='#'><li><img src='images/01.jpg' /><span class='img_title'>极度通胀下的越南渔业陷困境</span><div class='turn_img_bg'></div></li></a>
+					</ul>
+					<ol>
+						<li class='curr'>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ol>
+				</div>
+			</div>
+			<div id="important_msg">
+				<div class="list_header">重要通知</div>
+				<ul class="msg_list">
+					<li><a href='#'>青岛未出口鱼片</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海</a><span>[14-10-11]</span></li>
+					<li><a href='#'>俄罗斯海产品</a><span>[14-10-11]</span></li>
+					<li><a href='#'>MPEDA:虾类出</a><span>[14-10-11]</span></li>
+					<li><a href='#'>深圳拟出台首</a><span>[14-10-11]</span></li>
+					<li><a href='#'>深圳拟出台</a><span>[14-10-11]</span></li>
+					<li><a href='#'>MPEDA:虾类出</a><span>[14-10-11]</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div id="stripline_msg" class='turn_msg'>
+				<ul class='turn_msg_title'>
+					<li class='curr_title'><a href="stripline.html">对公条线</a></li>
+					<li ><a href="stripline.html">零售条线</a></li>
+					<li ><a href="stripline.html">运营条线</a></li>
+					<li ><a href="stripline.html">风险条线</a></li>
+				</ul>
+				<ul class='turn_news_block curr_content msg_list'>
+					<li><a href="detail_msg.html">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海鲜进口</a><span>[14-10-11]</span></li>
+					<li><a href='#'>俄罗斯海产品市场发展势头迅猛</a><span>[14-10-11]</span></li>
+					<li><a href='#'>MPEDA:虾类出口锐减影响水产品贸易全局</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟发布蓝鳍金枪鱼禁捕令</a><span>[14-10-11]</span></li>
+					<li><a href='#'>深圳拟出台首部深圳拟出台首部用海设施和构筑物登记管理规定</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>广东茂名海域管理亮点纷呈</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将开展海水入侵和土壤盐渍化监测</a><span>[14-10-11]</span></li>
+					<li><a href='#'>广东省成立水产品质量安全专项整治行动领导小组</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国海洋自然保护区存在的主要问题及对策建议</a><span>[14-10-11]</span></li>
+					<li><a href='#'>烟台市海洋功能区划、海洋环保规划通过评审</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+					<li><a href='#'>全国海岛保护与开发规划开始编制</a><span>[14-10-11]</span></li>
+					<li><a href='#'>上海首个共建海洋科普教育基地揭牌</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>北大西洋海底山脉中的奇特新物种</a><span>[14-10-11]</span></li>
+					<li><a href='#'>2007年是“国际海豚年”</a><span>[14-10-11]</span></li>
+					<li><a href='#'>日本确认发现世界最大海生兽类化石</a><span>[14-10-11]</span></li>
+					<li><a href='#'>最美岛屿”搬上方寸之地</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+					<li><a href='#'>海岛与群岛/岛屿、暗礁</a><span>[14-10-11]</span></li>
+					<li><a href='#'>四个大洋的名称是怎么来的？</a><span>[14-10-11]</span></li>
+					<li><a href='#'>市霞山区解放东路40号广东海洋大学霞山校区高层407 </a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>北大西洋海底山脉中的奇特新物种</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>最美岛屿”搬上方寸之地</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+					<li><a href='#'>烟台市海洋功能区划、海洋环保规划通过评审</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+					<li><a href='#'>全国海岛保护与开发规划开始编制</a><span>[14-10-11]</span></li>
+				</ul>
+			</div>
+			<div id="product_msg">
+				<div id="product_title" class="list_header">产品信息</div>
+				<table>
+					<tr><td><img src="images/02.jpg"></td></tr>
+					<tr><td><img src="images/04.jpg"></td></tr>
+				</table>
+			</div>
+			<div id="deparment" class="turn_msg">
+				<ul class='turn_msg_title_vertical'>
+					<li class='curr_title'><a href="department.html">公司业务部</a></li>
+					<li ><a href="department.html">零售业务部</a></li>
+					<li ><a href="department.html">办公室</a></li>
+					<li ><a href="department.html">计划财务部</a></li>
+					<li ><a href="department.html">风险管理部</a></li>
+					<li ><a href="department.html">营业部</a></li>
+					<li ><a href="department.html">业务一部</a></li>
+					<li ><a href="department.html">业务二部</a></li>
+				</ul>
+				<ul class='turn_news_block curr_content msg_list'>
+					<li><a href="detail_msg.html">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海鲜进口</a><span>[14-10-11]</span></li>
+					<li><a href='#'>俄罗斯海产品市场发展势头迅猛</a><span>[14-10-11]</span></li>
+					<li><a href='#'>MPEDA:虾类出口锐减影响水产品贸易全局</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟发布蓝鳍金枪鱼禁捕令</a><span>[14-10-11]</span></li>
+					<li><a href='#'>深圳拟出台首部深圳拟出台首部用海设施和构筑物登记管理规定</a><span>[14-10-11]</span></li>
+					<li><a href='#'>MPEDA:虾类出口锐减影响水产品贸易全局</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>广东茂名海域管理亮点纷呈</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将开展海水入侵和土壤盐渍化监测</a><span>[14-10-11]</span></li>
+					<li><a href='#'>广东省成立水产品质量安全专项整治行动领导小组</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国海洋自然保护区存在的主要问题及对策建议</a><span>[14-10-11]</span></li>
+					<li><a href='#'>烟台市海洋功能区划、海洋环保规划通过评审</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+					<li><a href='#'>全国海岛保护与开发规划开始编制</a><span>[14-10-11]</span></li>
+					<li><a href='#'>上海首个共建海洋科普教育基地揭牌</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>北大西洋海底山脉中的奇特新物种</a><span>[14-10-11]</span></li>
+					<li><a href='#'>2007年是“国际海豚年”</a><span>[14-10-11]</span></li>
+					<li><a href='#'>日本确认发现世界最大海生兽类化石</a><span>[14-10-11]</span></li>
+					<li><a href='#'>最美岛屿”搬上方寸之地</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+					<li><a href='#'>海岛与群岛/岛屿、暗礁</a><span>[14-10-11]</span></li>
+					<li><a href='#'>四个大洋的名称是怎么来的？</a><span>[14-10-11]</span></li>
+					<li><a href='#'>市霞山区解放东路40号广东海洋大学霞山校区高层407 </a><span>[14-10-11]</span></li>
+					<li><a href='#'>海岛与群岛/岛屿、暗礁</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>北大西洋海底山脉中的奇特新物种</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>最美岛屿”搬上方寸之地</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+					<li><a href='#'>烟台市海洋功能区划、海洋环保规划通过评审</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+					<li><a href='#'>全国海岛保护与开发规划开始编制</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href="detail_msg.html">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海鲜进口</a><span>[14-10-11]</span></li>
+					<li><a href='#'>俄罗斯海产品市场发展势头迅猛</a><span>[14-10-11]</span></li>
+					<li><a href='#'>MPEDA:虾类出口锐减影响水产品贸易全局</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟发布蓝鳍金枪鱼禁捕令</a><span>[14-10-11]</span></li>
+					<li><a href='#'>深圳拟出台首部深圳拟出台首部用海设施和构筑物登记管理规定</a><span>[14-10-11]</span></li>
+					<li><a href='#'>欧盟拟禁马海鲜进口</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>广东茂名海域管理亮点纷呈</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将开展海水入侵和土壤盐渍化监测</a><span>[14-10-11]</span></li>
+					<li><a href='#'>广东省成立水产品质量安全专项整治行动领导小组</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国海洋自然保护区存在的主要问题及对策建议</a><span>[14-10-11]</span></li>
+					<li><a href='#'>烟台市海洋功能区划、海洋环保规划通过评审</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+					<li><a href='#'>全国海岛保护与开发规划开始编制</a><span>[14-10-11]</span></li>
+					<li><a href='#'>上海首个共建海洋科普教育基地揭牌</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>北大西洋海底山脉中的奇特新物种</a><span>[14-10-11]</span></li>
+					<li><a href='#'>2007年是“国际海豚年”</a><span>[14-10-11]</span></li>
+					<li><a href='#'>日本确认发现世界最大海生兽类化石</a><span>[14-10-11]</span></li>
+					<li><a href='#'>最美岛屿”搬上方寸之地</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+					<li><a href='#'>海岛与群岛/岛屿、暗礁</a><span>[14-10-11]</span></li>
+					<li><a href='#'>四个大洋的名称是怎么来的？</a><span>[14-10-11]</span></li>
+					<li><a href='#'>市霞山区解放东路40号广东海洋大学霞山校区高层407 </a><span>[14-10-11]</span></li>
+					<li><a href='#'>海岛与群岛/岛屿、暗礁</a><span>[14-10-11]</span></li>
+				</ul>
+				<ul class='turn_news_block msg_list'>
+					<li><a href='#'>北大西洋海底山脉中的奇特新物种</a><span>[14-10-11]</span></li>
+					<li><a href='#'>我国将坚持“以养为主”打造现代水产养殖业</a><span>[14-10-11]</span></li>
+					<li><a href='#'>极度通胀下的越南渔业陷困境</a><span>[14-10-11]</span></li>
+					<li><a href='#'>最美岛屿”搬上方寸之地</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+					<li><a href='#'>烟台市海洋功能区划、海洋环保规划通过评审</a><span>[14-10-11]</span></li>
+					<li><a href='#'>南海区海洋工作指导委员会第二次会议召开</a><span>[14-10-11]</span></li>
+					<li><a href='#'>全国海岛保护与开发规划开始编制</a><span>[14-10-11]</span></li>
+					<li><a href='#'>煮熟的螃蟹为何会变色</a><span>[14-10-11]</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <div id="footer">
+		<center>
+			<table style="width:800px;">
+				<tr>
+					<td style="padding-right:40px;">
+						<span>版权所有：中国光大银行湛江分行</span><br><br>
+						<span>地址：广东省湛江市开发区体育中心丽晶大厦</span>
+					</td>
+					<td>
+						<img src="images/conn_msg.png" style="height:80px;margin-right:50px;">
+						<img src="images/sitename.png" style="height:80px;">
+					</td>
+				</tr>
+			</table>
+		</center> -->
+	<div class="footer">
+	
+		<div class="menu_box"><ul class="footermenu c">
+			<li><a href="http://10.5.88.7" target="_blank">广州分行</a>|</li>
+          	<li><a href="http://www.cebbank.com" target="_blank">总行</a>|</li>
+          	<li><a target="_blank">IAM系统</a>|</li>
+          	<li><a target="_blank">数据服务</a>|</li>
+          	<li><a href="http://10.5.88.7" target="_blank">广州分行</a>|</li>
+          	<li><a href="http://www.cebbank.com" target="_blank">总行</a>|</li>
+          	<li><a href="http://www.cebbank.com" target="_blank">总行</a>|</li>
+          	<li><a target="_blank">IAM系统</a></li>
+		</ul></div>
+		<div class="copyright">中国光大银行湛江分行版权所有</div>
+		<div class="copyright">地址：广东省湛江市赤坎区人民大道北45号丽晶大厦</div>
+		<div class="auth_logo">
+			<img src="images/conn_msg.png" alt="中国光大银行" title="中国光大银行">
+		</div>
+	<div id="dynamic_foot">
+
+<!--尾部 end-->
+</div>
+	</div>
+</body>
+</html>

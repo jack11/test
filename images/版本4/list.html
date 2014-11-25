@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+	<title>综合信息</title>
+	<meta charset="utf-8" />
+	<meta name="author" />
+	<meta name="keyword" />
+	<meta name="description" />
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style type="text/css">
+		.barrier{widht:auto;height:1px;clear: both;}
+		#content{height:0px;}
+
+		#left{width:245px;float: left;}
+		.list_header{height:32px;line-height:28px;color: #ffffff;font-size: 14px;font-family: 'Microsoft Yahei';text-align: center;line-height: 28px;background-image: url(images/bg_title.png);}
+		.msg_list{border-left:5px solid #EEEEEE;border-bottom:3px solid #EEEEEE;border-right:3px solid #EEEEEE;}
+		.msg_list li {margin-top:2px;padding-left: 26px;line-height:32px;color: #605858;height: 32px;font-weight:800;display: block;overflow: hidden;background: #f7f7f7;border-bottom:1px solid #EEEEEE;}
+		.msg_list li:hover{background-color: white;color: #9768AC;}
+		.msg_list a{width:170px; color: #333;display: block;float: left;overflow: hidden;}
+		.msg_list a:hover{color: #9768AC;}
+		.msg_list span{float: right;width: 64px;}
+		.msg_list .curr_title{background-color: white;/*border-top: 1px solid #EEEEEE;*/}
+		.msg_list .curr_title a{color: #9768AC;}
+
+		#right{width:735px;background: #F7F7F7;float: right;border-bottom: 1px solid #EEEEEE;}
+		.right_title {width: 720px;height: 32px;background-color:#CFCFCF;line-height: 32px;color: #000;font-size: 12px;padding-left: 15px;}
+		.right_content {width: 727px;background: #fff;border-left: 5px solid #EEEEEE;border-bottom: 5px solid #EEEEEE;border-right: 3px solid #EEEEEE;}
+		.right_content ul li {height:28px;line-height:28px;overflow:hidden;background: url(./Images/news_li.jpg) 17px center no-repeat;padding-left: 30px;border-bottom: 1px solid #cacaca;}
+		.right_content ul li a{width:580px;height:28px;line-height:28px;display:block;color: #555;}
+		.right_content ul li:hover,.right_content ul li>a:hover{background-color: #F5F5F5;color: #9768AC;}
+		/*.right_content ul li a:hover{color: #9768AC;}*/
+		.right_content span {float: right;padding-right: 22px;}
+
+		.breadcrumbs li{float:left;height:32px;line-height: 32px;}
+		.breadcrumbs li span{margin-left:5px;float:left;}
+		.breadcrumbs a{color:#696969;font-family:'Microsoft Yahei';font-size:14px;font-weight:bold;margin-left:5px;float:left;}
+		.breadcrumbs a:hover{color:#9768AC;text-decoration:none;}
+
+		#pager{margin-top:0px;height:34px;border: 1px solid #EEEEEE;float: right;background-color: #F5F5F5;}
+		#pager .all_page{height:34px;line-height:34px;padding:0 12px;float:left;border: 1px solid #EEEEEE;}
+		#pager .to_page{height:34px;line-height:34px;float:right;}
+		#pager .to_page input{width:51px;height:33px;line-height:34px;border: 1px solid #EEEEEE;}
+		#pager .to_page a{float: right;}
+		#pager ul{float: left;}
+		#pager ul li{float: left;border: 1px solid #EEEEEE;}
+		#pager a{height: 34px;line-height:34px;padding:0 12px;display: block;color: black;}
+		#pager a:hover{background-color: white;color: #9768AC;}
+		#pager ul li .active{background-color: white;color: #9768AC;}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="banner"></div>
+		<div id="nav">
+			<ul class="nav_bar">
+				<li ><a href="index.html" >首页</a></li>
+				<li ><a href="#" class="active">行内通知 </span></a>
+					<ul class="li_bar">
+						<li ><a href="#">综合信息</a></li>
+			        	<li ><a href="import_msg.html">重要通知</a></li>
+					</ul>
+				</li>
+				<li><a href="#">分行信息 </span></a>
+					<ul class="li_bar">
+						<li ><a href="#">分行简报</a></li>
+			        	<li ><a href="#">分行发文</a></li>
+					</ul>
+				</li>
+		        <li><a href="#">下载专区 </span></a>
+		            <ul class="li_bar">
+		              <li><a href="#">资料下载</a></li>
+		              <li><a href="#">软件下载</a></li>
+		            </ul>
+		        </li>
+		        <li ><a href="#">通讯录</a></li>
+		        <li ><a href="#">文化风采</a></li>
+		        <li ><a href="#">公共文件夹</a></li>
+			</ul>
+		</div>
+		<div id="search_bar">
+			<form id="search_form">
+				<input type="text" name="" class="keyword" value="全文检索" /><input type="submit" value=" " />
+			</form>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="left">
+	    	<div class="list_header">行内通知</div>
+	        <div class="">
+	        	<ul class="msg_list">
+	            	<li class="curr_title"><a href="#">综合信息</a></li>
+	            	<li ><a href="import_msg.html" >重要通知</a></li>
+	            </ul> 
+	        </div>
+	        
+	        <div class="left_bottom"></div>
+	    </div>
+
+	    <div id="right">
+	    	<div class="right_title">
+	    		<ul class="breadcrumbs">
+					<li ><span>&gt;&gt;</span><a href="#">行内通知</a> </li>
+					<li ><span>&gt;</span><a href="#">综合信息</a></li>
+				</ul>
+	    	</div>
+        	<div class="right_content">
+	        	<ul>
+	            	<li><span>2014-07-09</span><a href="detail_msg.html">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片上黑出口鱼片上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青青岛未出口鱼片上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片上上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片上黑岛未出口鱼片上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a></li>
+	            	<li><span>2014-07-09</span><a href="#">青岛未出口鱼片上黑名单企业向美青岛未出口鱼片上黑名单企业向美</a></li>
+	            </ul>
+	        </div>
+	        <div id="pager">
+	        	<div class="all_page">共 8 页</div>
+	        	<ul>
+	        		<li><a title="首页" href="#">&lt;&lt;</a></li>
+	        		<li><a title="上一页" href="#">&lt;</a></li>
+	        		<li><a href="#">1</a></li>
+	        		<li><a href="#">2</a></li>
+	        		<li><a href="#" class="active">3</a></li>
+	        		<li><a href="#">4</a></li>
+	        		<li><a href="#">5</a></li>
+	        		<li><a href="#">6</a></li>
+	        		<li><a href="#">7</a></li>
+	        		<li><a href="#">8</a></li>
+	        		<li><a title="下一页" href="#">&gt;</a></li>
+	        		<li><a title="尾页" href="#">&gt;&gt;</a></li>
+	        	</ul>
+	        	<!-- <div class="to_page">
+	        		<input type="text" value="">
+	        		<a href="#">GO</a>
+	        	</div> -->
+	        </div>
+        </div>
+	</div>
+
+	<div class="barrier"></div>
+	<div class="footer">
+	
+		<div class="menu_box"><ul class="footermenu c">
+			<li><a href="http://10.5.88.7" target="_blank">广州分行</a>|</li>
+          	<li><a href="http://www.cebbank.com" target="_blank">总行</a>|</li>
+          	<li><a target="_blank">IAM系统</a>|</li>
+          	<li><a target="_blank">数据服务</a>|</li>
+          	<li><a href="http://10.5.88.7" target="_blank">广州分行</a>|</li>
+          	<li><a href="http://www.cebbank.com" target="_blank">总行</a>|</li>
+          	<li><a href="http://www.cebbank.com" target="_blank">总行</a>|</li>
+          	<li><a target="_blank">IAM系统</a></li>
+		</ul></div>
+		<div class="copyright">中国光大银行湛江分行版权所有</div>
+		<div class="copyright">地址：广东省湛江市赤坎区人民大道北45号丽晶大厦</div>
+		<div class="auth_logo">
+			<img src="images/conn_msg.png" alt="中国光大银行" title="中国光大银行">
+		</div>
+	<div id="dynamic_foot">
+
+<!--尾部 end-->
+</div>
+	</div>
+
+</body>
+
